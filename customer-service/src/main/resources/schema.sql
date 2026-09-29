@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS customers (
+    id UUID PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    document_number VARCHAR(20) NOT NULL UNIQUE,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    status VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP NOT NULL
+);
